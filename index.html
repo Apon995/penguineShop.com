@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>penguineShop.com</title>
+    <link rel="icon" type="image/svg+png" href="./assets/icons/cart-outline.svg" />
+    <!-- ----google-fonts--link--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- ----ionicons-srcipt-link--- -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- -----tailwind--csss-srcipt-src---- -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <!-- ---header-section--- -->
+    <header class="bg-[#FFFBF0]">
+        <nav class="flex items-center justify-between  lg:px-24 md:px-10 md:flex-row font-medium py-4">
+            <img src="./assets/icons/logo.png" alt="main-logo" class=" w-[250px] md:w-[350px] px-4 md:px-0">
+            <ion-icon class="text-2xl md:hidden block pr-4 cursor-pointer" name="menu"
+                onclick="onTogglemenu(this)"></ion-icon>
+
+            <div
+                class="nav-link pt-12 md:pt-0  absolute top-[-205px] duration-500 md:static md:min-w-fit min-w-full md:h-fit h-[200px] md:bg-inherit bg-white text-center md:text-start">
+                <ul class=" md:flex md:space-x-3 space-y-3 md:space-y-0">
+                    <li><a href="" class="hover:text-red-600 transition duration-200">Home</a></li>
+                    <li><a href="" class="hover:text-red-600 transition duration-200">products</a></li>
+                    <li><a href="" class="hover:text-red-600 transition duration-200">About us</a></li>
+                    <li><a href="" class="hover:text-red-600 transition duration-200">contact us</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+        <!-- ----header-banner--- -->
+        <section class="py-14">
+            <div class="flex gap-5 lg:px-24 flex-col lg:flex-row md:flex-row px-4">
+                <div class=" flex-1  py-10 px-5">
+                    <h1 class="text-[#FABE4C] text-4xl md:text-6xl font-[Bebas] uppercase font-medium">Be the Penguins
+                        <br>
+                        <span class="text-[#363958]">of Winter</span>
+                    </h1>
+                    <p class="text-lg py-2">Lorem Ipsum is simply dummy text of the printing <br>
+                        and typesetting industry.</p>
+
+                    <button
+                        class="hover:opacity-80 bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-4 px-6 rounded-lg text-white font-medium">
+                        <img src="./assets/icons/shopping-cart 1.png" class="w-6 inline justify-center" alt=""> BUY
+                        NOW</button>
+                </div>
+                <div class="flex-1  text-center ">
+                    <img src="./assets/images/model.png" alt="" class="w-[90%]">
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <!-- --main-section--- -->
+    <main class="font-[Roboto]">
+        <!-- women-jaket-section -->
+        <section class=" px-4 lg:px-24 py-14 w-full">
+            <h1 class="text-[#363958] text-4xl uppercase">WoMan Jacket</h1>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10 ">
+                <!-- -----women-jaket-first--card---- -->
+                <div
+                    class="py-5 px-5  border-2  rounded-xl shadow-2xl shadow-orange-200 cursor-pointer hover:bg-slate-200 transition  lg:hover:duration-700 ease-in">
+                    <div class="bg-[#F1F1F1] rounded-xl">
+                        <img src="./assets/images/jacket-1.png" alt="" class="w-full">
+
+                    </div>
+                    <h6 class="text-[#363958] font-bold text-xl mt-2">Yellow Coat Jacket </h6>
+                    <p class="text-[#3E3E3E] text-base py-2">Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-[#FABE4C] font-semibold text-2xl ">$234</span>
+                        <button
+                            class="hover:opacity-80 bg-gradient-to-l  from-[#A4BC46] to-[#85A019] py-4 px-6 rounded-lg text-white font-medium">
+                            <img src="./assets/icons/shopping-cart 1.png" class="w-6 inline justify-center" alt=""> BUY
+                            NOW</button>
+                    </div>
+
+                </div>
+                <!-- -----women-jaket-second--card---- -->
+
+                <div
+                    class="py-5 px-5 border-2 rounded-xl shadow-2xl shadow-orange-200 cursor-pointer hover:bg-slate-200 transition  lg:hover:duration-700 ease-in">
+
+                    <div class="bg-[#F1F1F1] rounded-xl ">
+                        <img src="./assets/images/jacket-2.png" alt="" class="w-full">
+
+                    </div>
+                    <h6 class="text-[#363958] font-bold text-xl mt-2">Ladies Jacket </h6>
+                    <p class="text-[#3E3E3E] text-base py-2 ">
+                        Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.
+                    </p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-[#FABE4C] font-semibold text-2xl ">$270</span>
+                        <button
+                            class="hover:opacity-80 bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-4 px-6 rounded-lg text-white font-medium">
+                            <img src="./assets/icons/shopping-cart 1.png" class="w-6 inline justify-center" alt=""> BUY
+                            NOW</button>
+                    </div>
+
+                </div>
+                <!-- -----women-jaket-third--card---- -->
+                <div
+                    class="py-5 px-5 border-2 rounded-xl shadow-2xl shadow-orange-200 cursor-pointer hover:bg-slate-200 transition  lg:hover:duration-700 ease-in">
+                    <div class="bg-[#F1F1F1] rounded-xl">
+                        <img src="./assets/images/jacket-3.png" alt="" class="w-full">
+
+                    </div>
+                    <h6 class="text-[#363958] font-bold text-xl mt-2">Woman Leather Jacket </h6>
+                    <p class="text-[#3E3E3E] text-base py-2 ">Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-[#FABE4C] font-semibold text-2xl ">$300</span>
+                        <button
+                            class="hover:opacity-80  bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-4 px-6 rounded-lg text-white font-medium">
+                            <img src="./assets/icons/shopping-cart 1.png" class="w-6 inline justify-center" alt=""> BUY
+                            NOW</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ---men-jacker-section----- -->
+        <section class=" px-4 lg:px-24 py-5 w-full">
+            <h1 class="text-[#363958] text-4xl uppercase">Man Jacket</h1>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10 ">
+                <!-- -----men-jaket-first--card---- -->
+                <div
+                    class="py-5 px-5  border-2  rounded-xl shadow-2xl shadow-orange-200 cursor-pointer hover:bg-slate-200 transition  lg:hover:duration-700 ease-in">
+                    <div class="bg-[#F1F1F1] rounded-xl">
+                        <img src="./assets/images/jacket-4.png" alt="" class="w-full">
+
+                    </div>
+                    <h6 class="text-[#363958] font-bold text-xl mt-2">Snowboard Jacket Mens </h6>
+                    <p class="text-[#3E3E3E] text-base py-2">Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-[#FABE4C] font-semibold text-2xl ">$600</span>
+                        <button
+                            class="hover:opacity-80 bg-gradient-to-l  from-[#A4BC46] to-[#85A019] py-4 px-6 rounded-lg text-white font-medium">
+                            <img src="./assets/icons/shopping-cart 1.png" class="w-6 inline justify-center" alt=""></i>
+                            BUY
+                            NOW</button>
+                    </div>
+
+                </div>
+                <!-- -----men-jaket-second--card---- -->
+
+                <div
+                    class="py-5 px-5 border-2 rounded-xl shadow-2xl shadow-orange-200 cursor-pointer hover:bg-slate-200 transition  lg:hover:duration-700 ease-in">
+
+                    <div class="bg-[#F1F1F1] rounded-xl ">
+                        <img src="./assets/images/jacket-5.png" alt="" class="w-full">
+
+                    </div>
+                    <h6 class="text-[#363958] font-bold text-xl mt-2">Man Leather Jackets </h6>
+                    <p class="text-[#3E3E3E] text-base py-2 ">
+                        Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.
+                    </p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-[#FABE4C] font-semibold text-2xl ">$450</span>
+                        <button
+                            class="hover:opacity-80 bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-4 px-6 rounded-lg text-white font-medium">
+                            <img src="./assets/icons/shopping-cart 1.png" class="w-6 inline justify-center" alt="">BUY
+                            NOW</button>
+                    </div>
+
+                </div>
+                <!-- -----men-jaket-third--card---- -->
+                <div
+                    class="py-5 px-5 border-2 rounded-xl shadow-2xl shadow-orange-200 cursor-pointer hover:bg-slate-200 transition  lg:hover:duration-700 ease-in">
+                    <div class="bg-[#F1F1F1] rounded-xl">
+                        <img src="./assets/images/jacket-6.png" alt="" class="w-full">
+
+                    </div>
+                    <h6 class="text-[#363958] font-bold text-xl mt-2">Man Casual Jackets </h6>
+                    <p class="text-[#3E3E3E] text-base py-2 ">Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-[#FABE4C] font-semibold text-2xl ">$500</span>
+                        <button
+                            class="hover:opacity-80  bg-gradient-to-l from-[#A4BC46] to-[#85A019] py-4 px-6 rounded-lg text-white font-medium">
+                            <img src="./assets/icons/shopping-cart 1.png" class="w-6 inline justify-center" alt=""> BUY
+                            NOW</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ----service--section---- -->
+        <section class="py-24 px-4  w-full">
+            <div class="flex flex-col lg:flex-row md:flex-col md:px-32 lg:px-0">
+                <div class="space-y-5 lg:px-10 py-5 flex-1 ">
+                    <!-- service-card-one -->
+                    <div
+                        class=" lg:hover:translate-y-3 hover:bg-gray-200 cursor-pointer transition hover:duration-500 ease-linear  shadow-lg border-2 rounded-xl flex items-center gap-7 py-5 px-6 flex-col lg:flex-row">
+                        <img src="./assets/icons/house.png" alt="" class="w-20">
+                        <div>
+                            <h1 class="text-[#363958] text-2xl font-medium ">Find the Perfect Fit</h1>
+                            <p calss="text-[ #3E3E3E] text-sm font-normal">Everybody is different, which is why<br>
+                                we offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <!-- --service-card-tow---- -->
+                    <div
+                        class=" lg:hover:translate-y-3 hover:bg-gray-200 cursor-pointer transition hover:duration-500 ease-linear shadow-lg border-2 rounded-xl flex items-center gap-7 py-5 px-6 flex-col lg:flex-row ">
+                        <img src="./assets/icons/box.png" alt="" class="w-20">
+                        <div>
+                            <h1 class="text-[#363958] text-2xl font-medium ">Free Exchanges</h1>
+                            <p calss="text-[ #3E3E3E] text-sm font-normal">One of the many reasons you can <br>
+                                shop with peace of mind.</p>
+                        </div>
+                    </div>
+                    <!-- service-card-three -->
+                    <div
+                        class=" lg:hover:translate-y-3 hover:bg-gray-200 cursor-pointer transition hover:duration-500 ease-linear  shadow-lg border-2 rounded-xl flex items-center gap-7 py-5 px-6 flex-col lg:flex-row ">
+                        <img src="./assets/icons/question.png" alt="" class="w-20">
+                        <div>
+                            <h1 class="text-[#363958] text-2xl font-medium ">Contact Our Seller</h1>
+                            <p calss="text-[ #3E3E3E] text-sm font-normal">They are here to help you. That's <br>
+                                quite literally what we pay them for.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- --service-image---- -->
+                <div class="flex-1">
+                    <img src="./assets/images/shopping.png" alt="" class="w-full py-10 px-5">
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <!-- ----footer-section-- -->
+    <footer
+        class=" flex md:block w-full md:h-[350px] h-[100px] bg-[#FFFBF0] text-black md:text-center items-center justify-center">
+        <div class="lg:px-24 py-20 justify-around flex-col md:flex-row lg:flex-row items-center hidden md:flex">
+            <div class="text-start">
+                <p class="text-2xl font-medium mb-2 ">Office address</p>
+                <div>
+                    <ul class="text-sm font-medium space-y-2">
+                        <li>level-2 mirpur bussiness center </li>
+                        <li>service 24/7 : <a href="">penguine@gmailc.com</a></li>
+                        <li>phone: 000845345354 </li>
+                        <li>(avaible at : 10am to 10pm)</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- --links-- -->
+            <div class="hidden lg:block md:block text-start">
+                <p class="text-2xl font-medium mb-2 ">Access link </p>
+                <div class="list-none font-normal text-base  space-y-1 ">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">products</a></li>
+                    <li><a href="">About us </a></li>
+                    <li><a href="">Contact us</a></li>
+                </div>
+            </div>
+
+            <!-- ---follow--- -->
+            <div class="hidden lg:block md:block ">
+                <p class="text-2xl font-medium mb-2">Follow us </p>
+                <ul class="flex gap-3 text-2xl">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="text-center "> copyright &copy;2023 by team midgen , All right reserve </p>
+
+    </footer>
+
+
+
+    <script>
+        let navLink = document.querySelector('.nav-link')
+        const onTogglemenu = (event) => {
+            setTimeout(() => {
+                event.name = event.name === "menu" ? "close" : "menu";
+            }, 200);
+            navLink.classList.toggle('top-[12%]');
+        }
+    </script>
+</body>
+
+</html>
